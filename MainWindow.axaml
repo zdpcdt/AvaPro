@@ -3,8 +3,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Title="Window with Button"
-        mc:Ignorable="d" d:DesignWidth="250" d:DesignHeight="100"
-        x:Class="AvaPro.MainWindow"
-        >
-        <Button Name="button" Click="Button_OnClick">Click Me!</Button>
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="200"
+        x:Class="AvaPro.MainWindow">
+    <Button Content="{Binding ButtonText}" Command="{Binding ButtonClicked}" />
 </Window>
